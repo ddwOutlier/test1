@@ -1,5 +1,5 @@
-const url = 'https://twelvelevetype.netlify.app/';
-const title = 'MBTI 팀플 유형';
+const url = 'https://ddwoutlier.github.io';
+const title = '감자 유형';
 
 var art = document.querySelector('.art')
 
@@ -24,16 +24,16 @@ function sendKakaoLink(shareTitle, shareDescription, shareImageUrl) {
 			imageUrl:
 				shareImageUrl,
 			link: {
-				mobileWebUrl: '',
-				webUrl: '',
+				mobileWebUrl: 'https://ddwoutlier.github.io/test1',
+				webUrl: 'https://ddwoutlier.github.io/test1',
 			},
 		},
 		buttons: [
 			{
 				title: '나도 테스트 하러가기',
 				link: {
-					mobileWebUrl: '',
-					webUrl: '',
+					mobileWebUrl: 'https://ddwoutlier.github.io/test1',
+					webUrl: 'https://ddwoutlier.github.io/test1',
 				},
 			},
 		],
@@ -65,12 +65,6 @@ function createDescription(){
 		case 5:
 			var shareDescription = infoList[5].name;
 			break;
-		case 6:
-			var shareDescription = infoList[6].name;
-			break;
-		case 7:
-			var shareDescription = infoList[7].name;
-			break;	
 	}
 	var shareTitle = '감자 유형 결과'
 	const shareImageUrl = url + '/img/image/' + imageNumber + '.png';
