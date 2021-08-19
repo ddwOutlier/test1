@@ -9,7 +9,7 @@ const tabletMQL = window.matchMedia('all and (min-width: 768px)');
 const pcMQL = window.matchMedia('all and (min-width: 1024px)');
 
 //12개의 질문
-const ENDPOINT = 7;
+const ENDPOINT = 1;
 //선택한 배열
 const select = [];
 let qIdx = -1;
@@ -17,13 +17,11 @@ let qIdx = -1;
 const calcScore = () => {
 	var pointArray = [
 		{ name: 'ssgam', value: 0, key: 0 },
-		{ name: 'firegam', value: 0, key: 1 },
-		{ name: 'shygam', value: 0, key: 2 },
-		{ name: 'Standgam', value: 0, key: 3 },
-		{ name: 'burngam', value: 0, key: 4 },
-		{ name: 'shadowgam', value: 0, key: 5 },
-		{name : 'gamja', value : 0, key : 6},
-		{ name: 'unigam', value: 0, key: 7 },
+		{ name: 'shygam', value: 0, key: 1 },
+		{ name: 'burngam', value: 0, key: 2 },
+		{ name: 'shadowgam', value: 0, key: 3 },
+		{ name: 'Standgam', value: 0, key: 4 },
+		{ name: 'unigam', value: 0, key: 5 },
 	];
 
 	for (let i = 0; i < ENDPOINT; i++) {
@@ -70,13 +68,11 @@ const goResult = () => {
 
 	//이미지 이름을 image-`point`.png로 저장할 것
 	const img_url = 'img/image-' + point + '.png';
-	//https://www.w3schools.com/jsref/met_document_createelement.asp
 	const res_img = document.createElement('img');
 	res_img.src = img_url; //img.src
 	res_img.alt = point; //img.alt
 	res_img.title = infoList[point].name; //img.title = img.name
 
-	//https://developer.mozilla.org/ko/docs/Web/API/Node/appendChild
 	const res_img_div = document.querySelector('.art');
 	res_img_div.appendChild(res_img);
 
@@ -87,7 +83,6 @@ const goResult = () => {
 	const desc = document.querySelector('.res');
 	desc.innerHTML = infoList[point].desc;
 
-	//https://developer.mozilla.org/ko/docs/Web/API/WindowTimers/setTimeout
 	//0.6초
 	setTimeout(() => {
 		header.style.display = 'none';
@@ -101,14 +96,12 @@ const goResult = () => {
 
 const end = () => {
 	qna.style.animation = '';
-	//https://www.w3schools.com/jsref/met_win_setinterval.asp
 	//주기적으로 흐려지며 y축으로 사라짐
 	const interval = setInterval(() => {
 		qna.style.opacity -= 0.1;
 		qna.style.transform = 'translateY(-1px)';
 	}, 50);
 
-	//https://www.w3schools.com/jsref/met_win_cleartimeout.asp
 	//timeout 지정 해제
 	setTimeout(() => clearTimeout(interval), 500);
 	//qna display 지움
