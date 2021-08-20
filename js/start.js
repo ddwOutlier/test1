@@ -9,7 +9,7 @@ const tabletMQL = window.matchMedia('all and (min-width: 768px)');
 const pcMQL = window.matchMedia('all and (min-width: 1024px)');
 
 //12개의 질문
-const ENDPOINT = 5;
+const ENDPOINT = 7;
 //선택한 배열
 const select = [];
 let qIdx = -1;
