@@ -42,10 +42,10 @@ const qnaList = [
     ]
   },
   {
-    q: '7. 팀플 진행 시에 더 짜증나는 상황은?',
+    q: '7. 팀플 진행 시에 더 스트레스 받는 팀원은?',
     a: [
       { answer: 'a. 8시에 시작인 회의, 7시 30분에 갑자기 회의 참석이 불가능하다고 하는 팀원', type: ['burngam','unigam','shygam','shadowgam'] },
-      { answer: 'b. 8시에 시작인 회의, 3분 늦었는데 왜 늦었냐고 뭐라 하는 팀원', type: ['ssgam','shadowgam','gamja'] },
+      { answer: 'b. 8시에 시작인 회의, 5분 늦었는데 왜 늦었냐고 뭐라 하는 팀원', type: ['ssgam','shadowgam','gamja'] },
     ]
   },
   {
