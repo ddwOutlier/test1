@@ -69,7 +69,7 @@ function createDescription(){
 			break;
 	}
 	var shareTitle = '감자 유형 결과'
-	const shareImageUrl = url + '/img/image/' + imageNumber + '.png';
+	const shareImageUrl = './img/image/' + imageNumber + '.png';
 	sendKakaoLink(shareTitle, shareDescription, shareImageUrl);
 }
 
