@@ -31,6 +31,8 @@ function sendKakaoLink(shareTitle, shareDescription, shareImageUrl) {
 		buttons: [
 			{
 				title: '나도 테스트 하러가기',
+				imageUrl:
+				shareImageUrl,
 				link: {
 					mobileWebUrl: 'https://ddwoutlier.github.io/test1',
 					webUrl: 'https://ddwoutlier.github.io/test1',
