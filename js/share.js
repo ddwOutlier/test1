@@ -1,4 +1,4 @@
-const url = 'https://ddwoutlier.github.io';
+const url = 'https://ddwoutlier.github.io/test1';
 const title = '감자 유형';
 
 var art = document.querySelector('.art')
