@@ -74,8 +74,7 @@ const qnaList = [
     q: '11. 오늘 만나기로 한 동기가 시간표 짜느라 잠을 설쳤다고 연락이 왔다. 이때 나의 답장은? ',
     a: [
       { answer: 'a. 시간표 때문에 잠을 설쳤다고..? 왜?? 그거 내일까지 수정할 수 있는데', type: ['burngam','unigam','shadowgam'] },
-      { answer: 'b. 그래서 시간표 다 짬? 너 A과목 듣냐?', type: ['ssgam','burngam','shadowgam'] },
-      { answer: 'c. 피곤하겠다,, 너 피곤하면 그냥 다음에 볼까?', type: ['ssgam','unigam','shygam','gamja']},
+      { answer: 'b. 피곤하겠다,, 너 피곤하면 그냥 다음에 볼까?', type: ['ssgam','unigam','shygam','gamja']},
     ]
   },
   {
