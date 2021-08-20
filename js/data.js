@@ -4,39 +4,45 @@
 
 const qnaList = [
   {
-    q: '1. 키쵸가 누군지 알고 있다.',
+    q: '1. 랩실에 갔더니 동기가 울고 있다. "4시간째 코드짰는데, 갑자기 컴퓨터 전원이 꺼졌어,,"',
     a: [
-      { answer: 'a. 당연 ', type: ['shygam', 'standgam', 'burngam', 'shadowgam','gamja','unigam'] },
-      { answer: 'b. 그게 누구죠', type: ['ssgam', 'firegam'] },
-    ]
-  },
-   {
-    q: '2. 팀플 회의 중 몇시간 째 결론이 나지 않는다. 이때 나는?',
-    a: [
-      { answer: 'a. 누군가는 결론을 내주지 않을까,, 가만히 지켜본다.', type: ['ssgam','shygam','shadowgam','standgam'] },
-      { answer: 'b. 이건 이렇게 합시다. 지금까지 나온 의견을 토대로 결론 의견을 제시한다.', type: ['burngam','unigam'] },
-    ]
-  },
-  {
-    q: '3. 프로젝트 발표 중 교수님이 “A부분 다시 봐봐, 저거는 왜 저렇게 했어요?” 등의 질문을 마구 퍼부었다. 이때 나의 속마음은?',
-    a: [
-      { answer: 'a. 교수님이 원망스럽다. or 내가 뭘 잘못한 거 같다는 생각에 주늑든다.', type: ['ssgam', 'shadowgam', 'standgam'] },
-      { answer: 'd. 교수님께 관심을 받다니, 기쁘다.', type: ['shygam','burngam','unigam'] }
-    ]
-  },
-  {
-    q: '4. 복도에서 지나가던 모르는 사람이 나에게 인사한다. 이때 나는?',
-    a: [
-        {answer : 'a. 못 본 척 한다. ', type : ['unigam','ssgam','shadowgam','standgam']},
-        {answer : 'b. 당황하지만 인사해준다.', type : ['shygam','burngam']},
+      { answer: 'a. 헉 괜찮아? 어떡해,, 저장은 했어? 급한거야? 도와줄까? 마이쮸(or 술) 먹을래?', type: ['ssgam','unigam','shygam','gamja'] },
+      { answer: 'b. 엥 컴퓨터가 갑자기 꺼졌다고? 낡아서 그런가,, 저장은 했어? ', type: ['burngam','shadowgam'] },
     ]
   },
     {
-    q: '5. 2시간째 코딩 중 저장도 안했는데, 갑자기 노트북 전원이 꺼졌다.',
+    q: '2. 팀플 회의 때 (그나마) 더 같이 일하고 싶은 유형은?',
     a: [
-        {answer : 'a. 아 ** ** ***** 나도 모르게 육성으로 욕한다.', type : ['burngam','shygam']},
-        {answer : 'b. 멘탈이 나갔지만 침착하게 노트북을 다시 켜서 복구할 방법을 찾는다.', type : ['unigam','shadowgam']},
-        {answer : 'c. 2시간 째 쓴 코드래봐야 몇 줄 안된다,,, 다시 쓰지 뭐,,, 하지만 눈물이 난다.', type : ['standgam','ssgam']},
+      { answer: 'a. 그거 데이터 없을걸요? 이건 구현 불가능할 거 같은데,, 실현 가능성 따지느라 진전이 없는 팀원 ', type: ['ssgam','unigam','shygam'] },
+      { answer: 'b. 오 좋아요. 헐 대박 좋은데요? 무슨 아이디어를 내도 좋다고 하는 팀원', type: ['burngam','shadowgam','gamja'] },
+    ]
+  },
+      {
+    q: '3. 프로젝트 진행 시, 당신이 주로 사용하는 것은?',
+    a: [
+      { answer: 'a. 선례연구에서 많이 활용한 모델', type: ['unigam','gamja'] },
+      { answer: 'b. 발표된 지 얼마 안된 핫한 트렌드 모델', type: ['ssgam','burngam','shadowgam','shygam'] },
+    ]
+  },
+        {
+    q: '4. 더 선호하는 전공 강의는? (둘 다 학점은 후하다는 전제!)',
+    a: [
+      { answer: 'a. "일단 들어두면 나중에 찾아서라도 쓸 수 있어요~" 배우는 건 많고 도움이 될 거 같지만 어려운 강의', type: ['burngam','shadowgam','gamja'] },
+      { answer: 'b. "하나를 알아도 정확하게 알아야지, 차근차근합시다" 하나하나 이해시켜줘서 좋지만 이 정도만 배워도 될지 의심스러운 강의', type: ['ssgam','unigam','shygam'] },
+    ]
+  },
+          {
+    q: '6. 팀플 진행 시에 더 짜증나는 상황은?',
+    a: [
+      { answer: 'a. 8시에 시작은 회의, 7시 30분에 갑자기 회의 참석이 불가능하다고 하는 팀원', type: ['burngam','unigam','shygam'] },
+      { answer: 'b. 8시에 시작인 회의, 3분 늦었는데 왜 늦었냐고 뭐라 하는 팀원', type: ['ssgam','shadowgam','gamja'] },
+    ]
+  },
+            {
+    q: '7. 이 테스트를 하면서 드는 생각은?',
+    a: [
+      { answer: 'a. 답안에 없는 답이 생각나면서 뭘 고를지 고민된다.', type: ['burngam','shadowgam','gamja'] },
+      { answer: 'b. 이걸로 무슨 결과를 도출할 수 있을지 의심된다.', type: ['ssgam','unigam','shygam'] },
     ]
   },
 ]
