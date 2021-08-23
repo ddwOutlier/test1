@@ -68,34 +68,34 @@ function createDescription(){
 			var shareDescription = infoList[5].name;
 			break;
 		case 6:
-			var shareDescription = infoList[5].name;
+			var shareDescription = infoList[6].name;
 			break;
 		case 7:
-			var shareDescription = infoList[5].name;
+			var shareDescription = infoList[7].name;
 			break;
 		case 8:
-			var shareDescription = infoList[5].name;
+			var shareDescription = infoList[8].name;
 			break;
 		case 9:
-			var shareDescription = infoList[5].name;
+			var shareDescription = infoList[9].name;
 			break;
 		case 10:
-			var shareDescription = infoList[5].name;
+			var shareDescription = infoList[10].name;
 			break;
 		case 11:
-			var shareDescription = infoList[5].name;
+			var shareDescription = infoList[11].name;
 			break;
 		case 12:
-			var shareDescription = infoList[5].name;
+			var shareDescription = infoList[12].name;
 			break;
 		case 13:
-			var shareDescription = infoList[5].name;
+			var shareDescription = infoList[13].name;
 			break;
 		case 14:
-			var shareDescription = infoList[5].name;
+			var shareDescription = infoList[14].name;
 			break;
 		case 15:
-			var shareDescription = infoList[5].name;
+			var shareDescription = infoList[15].name;
 			break;
 	}
 	var shareTitle = '감자 유형 결과'
