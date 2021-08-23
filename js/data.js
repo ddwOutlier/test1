@@ -2,9 +2,9 @@ const qnaList = [
   {
     q: '1. 만석인 인문관 엘베 속 어렴풋이 아는 동기와 눈이 마주쳤다. 이때 나는?',
     a: [
-      { answer: 'a. 뻘줌하군,,, 간단하게 눈인사 정도 건넨다.', type: ['ISTJ','ISFJ','INFJ','INTJ','ISTP','ISFP','INFP','INTP'] },
+      { answer: 'a. 뻘줌하군,,, 간단하게 눈인사 정도 건넨다.', type: ['ISFJ','INFJ','ISFP','INFP'] },
       { answer: 'b. ㅎㅇㅎㅇ 너도 (전공) 들으러가?', type: ['ESTJ','ESFJ','ENFJ','ENTJ','ESTP','ESFP','ENFP','ENTP'] },
-      { answer: 'c. 그냥 모르는척한다', type: ['ISTJ','ISFJ','INFJ','INTJ','ISTP','ISFP','INFP','INTP'] },
+      { answer: 'c. 그냥 모르는척한다', type: ['ISTJ','INTJ','ISTP','INTP'] },
     ]
   },
   {
@@ -107,6 +107,13 @@ const qnaList = [
     a: [
       { answer: 'a. 대박 축하해!! 열심히 준비하더니 잘 됐네!', type: ['ISFJ','INFJ','ISFP','INFP','ESFJ','ENFJ','ESFP','ENFP'] },
       { answer: 'b. 헐 어디 취업함??', type: ['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP']},
+      ]
+  },
+  {
+    q: '16. 이제는 온라인 강의 시대, 내가 강의를 듣는 타입과 더 가까운 유형은?',
+    a: [
+      { answer: 'a. 과목별로 언제까지 마감인지 미리 확인한다.', type: ['ISTJ','ISFJ','ESTJ','ESFJ','INFJ','INTJ','ENFJ','ENTJ']},
+      { answer: 'b. 내키면 들어가서 확인한다.', type:  ['ISTP','ISFP','ESTP','ESFP','INFP','INTP','ENFP','ENTP']},
       ]
   },
 ]
