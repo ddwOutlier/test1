@@ -67,6 +67,36 @@ function createDescription(){
 		case 5:
 			var shareDescription = infoList[5].name;
 			break;
+		case 6:
+			var shareDescription = infoList[5].name;
+			break;
+		case 7:
+			var shareDescription = infoList[5].name;
+			break;
+		case 8:
+			var shareDescription = infoList[5].name;
+			break;
+		case 9:
+			var shareDescription = infoList[5].name;
+			break;
+		case 10:
+			var shareDescription = infoList[5].name;
+			break;
+		case 11:
+			var shareDescription = infoList[5].name;
+			break;
+		case 12:
+			var shareDescription = infoList[5].name;
+			break;
+		case 13:
+			var shareDescription = infoList[5].name;
+			break;
+		case 14:
+			var shareDescription = infoList[5].name;
+			break;
+		case 15:
+			var shareDescription = infoList[5].name;
+			break;
 	}
 	var shareTitle = '감자 유형 결과'
 	const shareImageUrl = './img/image/' + imageNumber + '.png';
