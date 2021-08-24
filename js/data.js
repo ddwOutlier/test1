@@ -1,6 +1,6 @@
 const qnaList = [
   {
-    q: '1. 만석인 인문관 엘베 속 어렴풋이 아는 동기와 눈이 마주쳤다. 이때 나는?',
+    q: '1. 만석인 인문관 엘베 속 평소 자주 인사하던 동기와 눈이 마주쳤다. 이때 나는?',
     a: [
       { answer: 'a. 뻘줌하군,,, 간단하게 눈인사 정도 건넨다.', type: ['ISFJ','INFJ','ISFP','INFP'] },
       { answer: 'b. ㅎㅇㅎㅇ 너도 (전공) 들으러가?', type: ['ESTJ','ESFJ','ENFJ','ENTJ','ESTP','ESFP','ENFP','ENTP'] },
@@ -48,7 +48,7 @@ const qnaList = [
     a: [
       { answer: 'a. 아무 생각 없다.', type: ['ISTJ','ISFJ','ISTP','ISFP','ESTJ','ESFJ','ESTP','ESFP'] },
       { answer: 'b. 이걸로 무슨 결과를 도출할 수 있을지 의심된다.', type:['INFJ','INTJ','INFP','INTP','ENFJ','ENTJ','ENFP','ENTP'] },
-      { answer: 'c. 어떤 감자가 나올지 기대된다.', type: ['ISTJ','ISFJ','ISTP','ISFP','ESTJ','ESFJ','ESTP','ESFP'] },
+      { answer: 'c. 어떤 감자가 나올지 기대된다.', type: ['ISTJ','ISFJ','ISTP','ISFP','ESTJ','ESFJ','ESTP','ESFP','INFJ','INFP','ENFJ','ENFP'] },
     ]
   },
   {
@@ -82,8 +82,8 @@ const qnaList = [
   {
     q: '12. 교양 시간, 시험대체로 토론을 진행하게 되었다. 이때 더 편한 것은?',
     a:[
-      { answer: 'a. 미리 주제를 공유하고 토론게시판에 업로드', type: ['ISTJ','ISFJ','INFJ','INTJ','ISTP','ISFP','INFP','INTP'] },
-      { answer: 'b. 당일에 주제를 알려주고 줌으로 토론 진행', type: ['ESTJ','ESFJ','ENFJ','ENTJ','ESTP','ESFP','ENFP','ENTP'] },
+      { answer: 'a. 토론게시판에 정리해서 업로드', type: ['ISTJ','ISFJ','INFJ','INTJ','ISTP','ISFP','INFP','INTP'] },
+      { answer: 'b. 줌으로 토론 진행', type: ['ESTJ','ESFJ','ENFJ','ENTJ','ESTP','ESFP','ENFP','ENTP'] },
   ]
   },
   {
@@ -98,12 +98,12 @@ const qnaList = [
   {
     q: '14. 플젝 시작 때 나는?',
     a: [
-      { answer: 'a. 뭐부터 해야할지 순서나 계획을 미리 정해야 틀이 잡힌다.', type: ['INTJ','ENTJ','ISTJ','ESTJ'] },
-      { answer: 'b. 선례 연구나 이전 수상작 등 관련 자료를 찾아봐야 틀이 잡힌다. ', type: ['INFJ','ENFJ','ISFJ','ESFJ'] },
+      { answer: 'a. 뭐부터 해야할지 순서나 계획을 미리 정해야 틀이 잡힌다.', type:['ISTJ','ISFJ','ESTJ','ESFJ','INFJ','INTJ','ENFJ','ENTJ']  },
+      { answer: 'b. 선례 연구나 이전 수상작 등 관련 자료를 찾아봐야 틀이 잡힌다. ', type: ['ISTP','ISFP','ESTP','ESFP','INFP','INTP','ENFP','ENTP']},
     ]
   },
   {
-    q: '15. 동기가 취직에 성공했다고 연락이 왔다. 이때 당신은?',
+    q: '15. 동기가 취직에 성공했다고 연락이 왔다. 이때 당신이 처음으로 할 말은?',
     a: [
       { answer: 'a. 대박 축하해!! 열심히 준비하더니 잘 됐네!', type: ['ISFJ','INFJ','ISFP','INFP','ESFJ','ENFJ','ESFP','ENFP'] },
       { answer: 'b. 헐 어디 취업함??', type: ['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP']},
@@ -112,13 +112,12 @@ const qnaList = [
   {
     q: '16. 너 좀 돌아이같아 라는 말을 들었을 때',
     a: [
-      { answer: 'a. 음 역시 난 멋져', type: ['ISFJ','INFJ','ISFP','INFP','ESFJ','ENFJ','ESFP','ENFP'] },
-      { answer: 'b. 뭐야 왜 말을 그렇게 하지,,,?', type: ['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP']},
-      { answer: 'C. 지가 뭔데 나보고 돌아이래', type: ['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP']},
+      { answer: 'a. 음 역시 난 멋져', type: ['ESTJ','ESFJ','ENFJ','ENTJ','ESTP','ESFP','ENFP','ENTP'] },
+      { answer: 'b. 뭐야 왜 말을 그렇게 하지,,,?', type: ['ISFJ','INFJ','ISFP','INFP','ISTJ','INTJ','ISTP','INTP']},
+      { answer: 'C. 지가 뭔데 나보고 돌아이래', type: ['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP'] },
       ]
   },
 ]
-
 const infoList = [
   {
     name: '파릇파릇 <새싹 감자> (ENFP)',
