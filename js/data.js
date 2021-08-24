@@ -110,10 +110,11 @@ const qnaList = [
       ]
   },
   {
-    q: '15. 동기가 취직에 성공했다고 연락이 왔다. 이때 당신은?',
+    q: '16. 너 좀 돌아이같아 라는 말을 들었을 때',
     a: [
-      { answer: 'a. 대박 축하해!! 열심히 준비하더니 잘 됐네!', type: ['ISFJ','INFJ','ISFP','INFP','ESFJ','ENFJ','ESFP','ENFP'] },
-      { answer: 'b. 헐 어디 취업함??', type: ['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP']},
+      { answer: 'a. 음 역시 난 멋져', type: ['ISFJ','INFJ','ISFP','INFP','ESFJ','ENFJ','ESFP','ENFP'] },
+      { answer: 'b. 뭐야 왜 말을 그렇게 하지,,,?', type: ['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP']},
+      { answer: 'C. 지가 뭔데 나보고 돌아이래', type: ['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP']},
       ]
   },
 ]
