@@ -15,14 +15,14 @@ const qnaList = [
     ]
   },
     {
-    q: '3. 플젝 아이디어 회의 시간, 둘 중 나와 더 가까운 모습은?',
+    q: '3. 프로젝트 아이디어를 나누는 시간, 둘 중 나와 더 가까운 모습은?',
     a: [
-      { answer: 'a. 생각나는 아이디어를 적극적으로 던지고 보는 스타일', type: ['INFJ','INTJ','INFP','INTP','ENFJ','ENTJ','ENFP','ENTP'] },
-      { answer: 'b. 이미 나온 의견에 대하여 분석하고 질문하는 스타일', type: ['ISTJ','ISFJ','ISTP','ISFP','ESTJ','ESFJ','ESTP','ESFP'] },
+      { answer: 'a. 이미 나온 의견에 대하여 분석하고 질문하는 스타일', type: ['ISTJ','ISFJ','ISTP','ISFP','ESTJ','ESFJ','ESTP','ESFP'] },
+      { answer: 'b. 생각나는 아이디어를 적극적으로 던지고 보는 스타일', type: ['INFJ','INTJ','INFP','INTP','ENFJ','ENTJ','ENFP','ENTP'] },
     ]
   },
     {
-    q: '4. 플젝 진행 시, 당신이 주로 사용하는 것은?',
+    q: '4. 프로젝트 진행 시, 당신이 주로 사용하는 것은?',
     a: [
       { answer: 'a. 선례연구에서 많이 활용한 모델', type: ['ISTJ','ISFJ','ISTP','ISFP','ESTJ','ESFJ','ESTP','ESFP'] },
       { answer: 'b. 발표된 지 얼마 안된 핫한 트렌드 모델', type: ['INFJ','INTJ','INFP','INTP','ENFJ','ENTJ','ENFP','ENTP'] },
@@ -33,13 +33,14 @@ const qnaList = [
     a: [
       { answer: 'a. 다른 동기들이 인사하면 따라서 인사한다.', type: ['ISTJ','ISFJ','INFJ','INTJ','ISTP','ISFP','INFP','INTP'] },
       { answer: 'b. 누구보다 빠르게 먼저 인사한다.', type: ['ESTJ','ESFJ','ENFJ','ENTJ','ESTP','ESFP','ENFP','ENTP']},
+      { answer: 'c. 도망간다.', type: ['ISTJ','INTJ','ISTP','INTP']},
     ]
   },
    {
     q: '6. 팀플 시에 더 선호하는 방식은? ',
     a: [
       { answer: 'a. 큰 틀만 잡아두고 즉흥적으로 진행하는 방식', type: ['ISTP','ISFP','ESTP','ESFP','INFP','INTP','ENFP','ENTP'] },
-      { answer: 'b. 세부적인 규칙을 정해 진행하는 방식', type: ['ISTJ','ISFJ','ESTJ','ESFJ','INFJ','INTJ','ENFJ','ENTJ'] },
+      { answer: 'b. 세부적인 규칙을 정해 차근차근 진행하는 방식', type: ['ISTJ','ISFJ','ESTJ','ESFJ','INFJ','INTJ','ENFJ','ENTJ'] },
     ]
   },
   {
@@ -47,6 +48,7 @@ const qnaList = [
     a: [
       { answer: 'a. 아무 생각 없다.', type: ['ISTJ','ISFJ','ISTP','ISFP','ESTJ','ESFJ','ESTP','ESFP'] },
       { answer: 'b. 이걸로 무슨 결과를 도출할 수 있을지 의심된다.', type:['INFJ','INTJ','INFP','INTP','ENFJ','ENTJ','ENFP','ENTP'] },
+      { answer: 'c. 어떤 감자가 나올지 기대된다.', type: ['ISTJ','ISFJ','ISTP','ISFP','ESTJ','ESFJ','ESTP','ESFP'] },
     ]
   },
   {
@@ -57,17 +59,17 @@ const qnaList = [
     ]
   },
   {
-    q: '9. 교수님이 추천해주신 한 모델(방법)의 성능이 생각보다 좋지 않게 나왔다. 이때 나는?',
+    q: '9. 교수님이 추천해주신 모델의 성능이 생각보다 좋지 않게 나왔다. 이때 나는?',
     a: [
-      { answer: 'a. 여러 전처리, 하이퍼파라미터 튜닝 기법을 적용해본다.(같은 방법에서 여러가지 시도해본다.)', type: ['ISTJ','ISFJ','ESTJ','ESFJ','INFJ','INTJ','ENFJ','ENTJ']},
-      { answer: 'b. 빠르게 버리고 다른 여러 모델들을 적용해본다.(다른 방법을 적용해본다.)', type: ['ISTP','ISFP','ESTP','ESFP','INFP','INTP','ENFP','ENTP'] },
+      { answer: 'a. 여러 전처리, 하이퍼파라미터 튜닝 기법을 적용해본다.', type: ['ISTJ','ISFJ','ESTJ','ESFJ','INFJ','INTJ','ENFJ','ENTJ']},
+      { answer: 'b. 빠르게 버리고 다른 여러 모델들을 적용해본다.', type: ['ISTP','ISFP','ESTP','ESFP','INFP','INTP','ENFP','ENTP']},
     ]
   },
   {
     q: '10. 둘 중 더 화나는 사람은?',
     a: [
       { answer: 'a. 랩실 자리를 비운 사이 말도 없이 과제를 베껴 간 동기 ', type:['ISFJ','INFJ','ISFP','INFP','ESFJ','ENFJ','ESFP','ENFP'] },
-      { answer: 'b. 과제 도와준다고 깝치다가 내 과제 다 날려버린 동기', type:['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP']},
+      { answer: 'b. 과제 도와주다가 실수로 내 과제 다 날려버린 동기', type:['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP']},
     ]
   },
   {
@@ -80,26 +82,24 @@ const qnaList = [
   {
     q: '12. 교양 시간, 시험대체로 토론을 진행하게 되었다. 이때 더 편한 것은?',
     a:[
-      { answer: 'a. 미리 주제를 공유하고 주어진 기간동안 토론게시판에 업로드', type: ['ISTJ','ISFJ','INFJ','INTJ','ISTP','ISFP','INFP','INTP'] },
+      { answer: 'a. 미리 주제를 공유하고 토론게시판에 업로드', type: ['ISTJ','ISFJ','INFJ','INTJ','ISTP','ISFP','INFP','INTP'] },
       { answer: 'b. 당일에 주제를 알려주고 줌으로 토론 진행', type: ['ESTJ','ESFJ','ENFJ','ENTJ','ESTP','ESFP','ENFP','ENTP'] },
   ]
   },
   {
-    q: '13. 알고 지내던 동기가 내 뒷담을 했다는 소식을 들었다. 이때 나는?',
+    q: '13. 계획을 짤 때 나는? ',
     a: [
-      { answer: 'a. 어떻게 그럴 수가 있지,, 충격이다.', type: ['ENFP','INFP','ENFJ','INFJ'] },
-      { answer: 'b. 나한테 자격지심 느끼나? 역시 나는 잘났군', type: ['ENTJ','INTJ','ENTP'] },
-      { answer: 'c. 원래 모든 사람들이 날 좋아할 수는 없는 법! (하지만 신경쓰인다,,)', type: ['ESTP','ISTP','ESFP','ISFP','ESFJ'] },
-      { answer: 'd. 나랑 친하지 않았던 동기라 상관 없음 OR 걔가 누군데', type: ['ESTJ','ISTJ','ISFJ','INTP'] },
+      { answer: 'a. 내 일정에 맞춰서 효율적이게 짠다. ', type: ['ISTJ','ISFJ','ESTJ','ESFJ','INFJ','INTJ','ENFJ','ENTJ'] },
+      { answer: 'b. 계획 짜는 건 즐겁지만 내가 진짜로 할지는 미지수', type: ['ISTJ','ISFJ','ESTJ','ESFJ','INFJ','INTJ','ENFJ','ENTJ'] },
+      { answer: 'c. 계획을 짜다가 정신 차리면 딴 짓 중', type: ['ISTP','ISFP','ESTP','ESFP','INFP','INTP','ENFP','ENTP'] },
+      { answer: 'd. 계획을 세우는다가 생각난 것부터 해치운다.', type: ['ISTP','ISFP','ESTP','ESFP','INFP','INTP','ENFP','ENTP'] },
     ]
   },
   {
-    q: '14. 뭔가 구매할 때 나는?',
+    q: '14. 플젝 시작 때 나는?',
     a: [
-      { answer: 'a. 0점 짜리 리뷰를 모두 읽은 뒤 신중하게 구매한다.', type: ['INTJ','ENTJ','ISTJ','ESTJ'] },
-      { answer: 'b. 친구나 지인이 사면 후기를 듣고 산다.', type: ['INFJ','ENFJ','ISFJ','ESFJ'] },
-      { answer: 'c. 귀엽거나 흥미로우면 구매한다. (충동구매)', type: ['ISFP','ISTP','ESFP','ESTP'] },
-      { answer: 'd. 과도한 생각 뒤 결국 아무것도 안 사고 산책나간다.', type: ['INFP','ENFP','INTP','ENTP'] },
+      { answer: 'a. 뭐부터 해야할지 순서나 계획을 미리 정해야 틀이 잡힌다.', type: ['INTJ','ENTJ','ISTJ','ESTJ'] },
+      { answer: 'b. 선례 연구나 이전 수상작 등 관련 자료를 찾아봐야 틀이 잡힌다. ', type: ['INFJ','ENFJ','ISFJ','ESFJ'] },
     ]
   },
   {
@@ -110,10 +110,10 @@ const qnaList = [
       ]
   },
   {
-    q: '16. 이제는 온라인 강의 시대, 내가 강의를 듣는 타입과 더 가까운 유형은?',
+    q: '15. 동기가 취직에 성공했다고 연락이 왔다. 이때 당신은?',
     a: [
-      { answer: 'a. 과목별로 언제까지 마감인지 미리 확인한다.', type: ['ISTJ','ISFJ','ESTJ','ESFJ','INFJ','INTJ','ENFJ','ENTJ']},
-      { answer: 'b. 내키면 들어가서 확인한다.', type:  ['ISTP','ISFP','ESTP','ESFP','INFP','INTP','ENFP','ENTP']},
+      { answer: 'a. 대박 축하해!! 열심히 준비하더니 잘 됐네!', type: ['ISFJ','INFJ','ISFP','INFP','ESFJ','ENFJ','ESFP','ENFP'] },
+      { answer: 'b. 헐 어디 취업함??', type: ['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP']},
       ]
   },
 ]
