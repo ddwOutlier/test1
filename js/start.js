@@ -74,7 +74,7 @@ const goResult = () => {
 	const point = calcScore(); //return point
 
 	const pTitle = document.querySelector('.p');
-	pTitle.innerHTML = '당신의 결과는?!';
+	pTitle.innerHTML = '당신의 감자 유형은?!';
 
 	//이미지 이름을 image-`point`.png로 저장할 것
 	const img_url = 'img/image-' + point + '.png';
@@ -92,7 +92,11 @@ const goResult = () => {
 	//description
 	const desc = document.querySelector('.res');
 	desc.innerHTML = infoList[point].desc;
-
+	
+	//description2
+	const desc = document.querySelector('.res');
+	desc.innerHTML = infoList[point].desc;
+	
 	//0.6초
 	setTimeout(() => {
 		header.style.display = 'none';
