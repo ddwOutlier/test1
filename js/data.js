@@ -1,6 +1,6 @@
 const qnaList = [
   {
-    q: '1. 만석인 인문관 엘베 속 평소 자주 인사하던 동기와 눈이 마주쳤다. 이때 나는?',
+    q: '1. 만석인 인문관 엘베 속 어렴풋이 아는 동기와 눈이 마주쳤다. 이때 나는?',
     a: [
       { answer: 'a. 뻘줌하군,,, 간단하게 눈인사 정도 건넨다.', type: ['ISFJ','INFJ','ISFP','INFP'] },
       { answer: 'b. ㅎㅇㅎㅇ 너도 (전공) 들으러가?', type: ['ESTJ','ESFJ','ENFJ','ENTJ','ESTP','ESFP','ENFP','ENTP'] },
@@ -115,6 +115,13 @@ const qnaList = [
       { answer: 'a. 음 역시 난 멋져', type: ['ESTJ','ESFJ','ENFJ','ENTJ','ESTP','ESFP','ENFP','ENTP'] },
       { answer: 'b. 뭐야 왜 말을 그렇게 하지,,,?', type: ['ISFJ','INFJ','ISFP','INFP','ISTJ','INTJ','ISTP','INTP']},
       { answer: 'C. 지가 뭔데 나보고 돌아이래', type: ['ISTJ','INTJ','ISTP','INTP','ESTJ','ENTJ','ESTP','ENTP'] },
+      ]
+  },
+    {
+    q: '17. 마지막 문항입니다. 소감은?',
+    a: [
+      { answer: 'a. 드디어 끝났군', type:['ISTJ','ISFJ','ISTP','ISFP','ESTJ','ESFJ','ESTP','ESFP']},
+      { answer: 'b. 재밌었다. ', type: ['INFJ','INTJ','INFP','INTP','ENFJ','ENTJ','ENFP','ENTP']},
       ]
   },
 ]
