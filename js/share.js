@@ -1,5 +1,5 @@
-const url = 'https://ddwoutlier.github.io/test1';
-const title = '감자 유형';
+const url = 'https://ddwoutlier.neocities.org/';
+const title = '감자 유형 테스트';
 
 var art = document.querySelector('.art')
 
@@ -24,8 +24,8 @@ function sendKakaoLink(shareTitle, shareDescription, shareImageUrl) {
 			imageUrl:
 				shareImageUrl,
 			link: {
-				mobileWebUrl: 'https://ddwoutlier.github.io/test1',
-				webUrl: 'https://ddwoutlier.github.io/test1',
+				mobileWebUrl: 'https://ddwoutlier.neocities.org/',
+				webUrl: 'https://ddwoutlier.neocities.org/',
 			},
 		},
 		buttons: [
@@ -34,8 +34,8 @@ function sendKakaoLink(shareTitle, shareDescription, shareImageUrl) {
 				imageUrl:
 				shareImageUrl,
 				link: {
-					mobileWebUrl: 'https://ddwoutlier.github.io/test1',
-					webUrl: 'https://ddwoutlier.github.io/test1',
+					mobileWebUrl: 'https://ddwoutlier.neocities.org/',
+					webUrl: 'https://ddwoutlier.neocities.org/',
 				},
 			},
 		],
